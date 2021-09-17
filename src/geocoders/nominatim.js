@@ -36,7 +36,7 @@ export var Nominatim = L.Class.extend({
 
   geocode: function(query, cb, context) {
     getJSON(
-      this.options.serviceUrl + 'search',
+      this.options.serviceUrl + 'search.php',
       L.extend(
         {
           q: query,
@@ -67,7 +67,7 @@ export var Nominatim = L.Class.extend({
 
   reverse: function(location, scale, cb, context) {
     getJSON(
-      this.options.serviceUrl + 'reverse',
+      this.options.serviceUrl + 'teste.php',
       L.extend(
         {
           lat: location.lat,
