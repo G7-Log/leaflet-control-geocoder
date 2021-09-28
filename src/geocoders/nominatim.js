@@ -67,7 +67,7 @@ export var Nominatim = L.Class.extend({
 
   reverse: function(location, scale, cb, context) {
     getJSON(
-      this.options.serviceUrl + 'teste.php',
+      this.options.serviceUrl + 'reverse.php',
       L.extend(
         {
           lat: location.lat,
